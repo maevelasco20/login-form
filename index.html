@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+  </head>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: rgb(27, 27, 31);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      color: #fff;
+    }
+    h1 {
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      padding: 10px 0;
+      margin: 0;
+    }
+    form {
+      width: 380px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: rgba(34, 36, 42, 0.8);
+      box-shadow: 10px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .input-form {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .input-form label {
+      font-weight: 500;
+    }
+    .input-form input {
+      font-size: 13px;
+      padding: 15px 10px;
+      background-color: rgba(82, 82, 91, 0.2);
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 10px;
+    }
+    .login-btn {
+      font-size: 13px;
+      padding: 15px 10px;
+      background-color: rgba(13, 13, 199, 0.96);
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      margin-top: 5px;
+    }
+  </style>
+  <body>
+    <form onsubmit="onSubmit(event)">
+      <h1>Login Form</h1>
+      <div class="input-form">
+        <label>Username</label>
+        <input type="text" placeholder="Username" name="username" />
+      </div>
+      <div class="input-form">
+        <label>Password</label>
+        <input type="password" placeholder="Password" name="password" />
+      </div>
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+    <script>
+      function onSubmit(e) {
+        e.preventDefault();
+        alert("fasfas");
+      }
+    </script>
+  </body>
+</html>
